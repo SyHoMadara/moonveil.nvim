@@ -8,7 +8,8 @@ SyHoMadaraVim = {
       border = "rounded", -- defutlt=rounded, none, single, double, solid, shadow
     }
   },
-  minimal_mode = false, -- if true, disable some ui features
+  code_mode = IS_CODING_MODE, -- if true, enable some coding related plugins and features
+  minimal_mode = IS_MINIMAL, -- if true, disable some ui features
   icons = icons, -- icons table 
   leader_key = ",", -- defutlt leader key is ","
 }
