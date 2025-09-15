@@ -7,11 +7,25 @@ return {
 		lazy = false,
 		opts = {
 			bigfile = { enabled = true },
+			bufdelete = { enabled = true },
 			dashboard = { enabled = false },
 			explorer = { enabled = true },
 			indent = { enabled = true },
 			input = { enabled = SyHoMadaraVim.minimal_mode == false },
-			notifier = { enabled = SyHoMadaraVim.minimal_mode == false },
+			notifier = {
+				enabled = SyHoMadaraVim.minimal_mode == false,
+				notification_history = {
+					border = SyHoMadaraVim.ui.float.border or "rounded",
+					zindex = 100,
+					minimal = false,
+					title = " Notification History ",
+					title_pos = "center",
+					ft = "markdown",
+					bo = { filetype = "snacks_notif_history", modifiable = false },
+					wo = { winhighlight = "Normal:SnacksNotifierHistory" },
+					keys = { q = "close" },
+				},
+			},
 			picker = {
 				enabled = true,
 				explorer = {
@@ -96,7 +110,7 @@ return {
 			-- │ Picker                                                  │
 			-- ╰─────────────────────────────────────────────────────────╯
 			{
-				"<A-n>",
+				"<C-n>",
 
 				function()
 					Snacks.picker.explorer()
@@ -198,7 +212,9 @@ return {
 				end,
 				desc = "dotfiles",
 			},
-
+      -- ╭─────────────────────────────────────────────────────────╮
+			-- │ Git                                                     │
+			-- ╰─────────────────────────────────────────────────────────╯
 			{
 				"<leader>gf",
 				function()
@@ -226,6 +242,18 @@ return {
 					Snacks.picker.git_log_file()
 				end,
 				desc = "file commits",
+			},
+
+			-- ╭─────────────────────────────────────────────────────────╮
+			-- │ Notifier                                                │
+			-- ╰─────────────────────────────────────────────────────────╯
+
+			{
+				"<leader>hn",
+				function()
+					Snacks.notifier.show_history(Snacks.notifier.notification_history)
+				end,
+				desc = "Show Notification History",
 			},
 		},
 	},
