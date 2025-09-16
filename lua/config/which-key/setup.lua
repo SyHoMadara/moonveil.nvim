@@ -53,6 +53,7 @@ wk.add({
 	{ "<leader>f", group = " Grep" .. SyHoMadaraVim.icons.search },
 	{ "<leader>p", group = " Project" .. SyHoMadaraVim.icons.folder },
 	{ "<leader>s", group = "Code" },
+  { "<leader>b", group = " Buffer" .. SyHoMadaraVim.icons.buffer },
 	{
 		"<leader>?",
 		function()
