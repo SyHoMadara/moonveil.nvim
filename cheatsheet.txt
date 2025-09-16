@@ -1,0 +1,118 @@
+## * 
+## * * 
+:last | ]A
+:lnext | ]l
+:blast | ]B
+:tnext | ]t
+:cnext | ]q
+Jump to the last diagnostic in the current buffer | ]D
+:bnext | ]b
+:tlast | ]T
+:ptnext | ]<C-T>
+Jump to the next diagnostic in the current buffer | ]d
+:llast | ]L
+:lnfile | ]<C-L>
+Add empty line below cursor | ]
+:next | ]a
+:cnfile | ]<C-Q>
+:clast | ]Q
+## * * 
+:rewind | [A
+:lprevious | [l
+:brewind | [B
+:tprevious | [t
+:cprevious | [q
+Jump to the first diagnostic in the current buffer | [D
+:bprevious | [b
+:trewind | [T
+:ptprevious | [<C-T>
+Jump to the previous diagnostic in the current buffer | [d
+:lrewind | [L
+:lpfile | [<C-L>
+Add empty line above cursor | [
+:previous | [a
+:cpfile | [<C-Q>
+:crewind | [Q
+## * * 
+vim.lsp.buf.document_symbol() | gO
+Opens filepath or URI under cursor with the system handler (file explorer, web browser, …) | gx
+marks | g`
+## * * * 
+Toggle comment line | gcc
+marks | g'
+## * * * 
+vim.lsp.buf.type_definition() | grt
+vim.lsp.buf.references() | grr
+vim.lsp.buf.code_action() | gra
+vim.lsp.buf.rename() | grn
+vim.lsp.buf.implementation() | gri
+:help &-default | &
+Quit Neovim | <C-E>
+:help Y-default | Y
+## * * 
+Spelling Suggestions | z=
+## * * 
+Notifie An command | ,]
+## * * Project  
+Project  | <leader>p
+projects list | ,pl
+## * * Buffer  
+Buffer  | <leader>b
+Pick Buffer | ,bp
+Close Right | ,br
+Move next | ,bn
+Pin/Unpin Buffer | ,bP
+Close Left | ,bl
+Move back | ,bb
+## * * Buffer  * 
+Sort by directory | ,bsd
+Sort by relative dir | ,bsr
+Sort by extension | ,bse
+## * * Lazy Git  
+Lazy Git  | <leader>l
+## * * Lazy Git  * 
+Lazygit Current File History | ,llc
+## * * Lazy Git  * 
+Lazygit Log (cwd) | ,lga
+## * * Grep  
+Grep  | <leader>f
+grep | ,fw
+smart files | ,ff
+grep selected | ,fs
+Toggle Commant | ,/
+Zen Mode | ,z
+## * * Help  
+Help  | <leader>h
+Show Notification History | ,hn
+Zoom Mode | ,Z
+## * * Git  
+Git  | <leader>g
+## * * Git  * 
+log | ,glA
+file commits | ,glC
+git files | ,gf
+git status | ,gs
+## * * * 
+diagnostics | ,cd
+## * * Code 
+Code | <leader>s
+recent files | ,sh
+dotfiles | ,sd
+command history | ,sH
+quickfix list | ,sq
+buffers | ,sb
+color schemes | ,sc
+files | ,sf
+search history | ,ss
+marks | '
+Previous buffer | <S-Tab>
+## * * 
+Show diagnostics under the cursor | <C-W>d
+Show diagnostics under the cursor | <C-W><C-D>
+:help CTRL-L-default | <C-L>
+explorer | <C-N>
+marks | `
+Next buffer | <Tab>
+Save Buffer | <C-S>
+Close Buffer   | <M-q>
+registers | "
