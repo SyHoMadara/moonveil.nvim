@@ -53,23 +53,34 @@ wk.add({
 	{ "<leader>f", group = " Grep" .. SyHoMadaraVim.icons.search },
 	{ "<leader>p", group = " Project" .. SyHoMadaraVim.icons.folder },
 	{ "<leader>s", group = "Code" },
-  { "<leader>b", group = " Buffer" .. SyHoMadaraVim.icons.buffer },
-	{
-		"<leader>?",
-		function()
-			require("which-key").show({ global = false })
-		end,
-		desc = "Buffer Local Keymaps",
-	},
+	{ "<leader>b", group = " Buffer" .. SyHoMadaraVim.icons.buffer },
+	-- {
+	-- 	"<leader>?",
+	-- 	function()
+	-- 		require("which-key").show({ global = false })
+	-- 	end,
+	-- 	desc = "Buffer Local Keymaps",
+	-- },
 })
 
 wk.add({
 	{ "<A-q>", "<cmd>bn|bd#<CR>", desc = " Close Buffer " .. SyHoMadaraVim.icons.close, mode = { "n", "i" } },
 	{ "<C-s>", "<cmd>w<cr>", desc = "Save Buffer", mode = { "n", "i" } },
-  { "<C-e>", "<cmd>q!<cr>", desc = "Quit Neovim", mode = { "n", "i" }}
+	{ "<C-e>", "<cmd>q!<cr>", desc = "Quit Neovim", mode = { "n", "i" } },
 })
 
+wk.add({
+	{ "<leader>/", "gcc", desc = "Toggle Commant", mode = { "n", "v" } },
+})
 
 wk.add({
-  { "<leader>/", "gcc", desc = "Toggle Commant", mode = { "n", "v" }},
+	{
+		"<leader>]",
+		function()
+			for key, value in pairs(require("which-key")) do
+				require("snacks").notifier.notify(key .. " = " .. tostring(value), "info", { title = "Which-Key" })
+			end
+		end,
+		desc = "Notifie An command",
+	},
 })
