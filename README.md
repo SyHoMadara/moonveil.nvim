@@ -40,3 +40,19 @@ These diagnostic keymaps are created unconditionally when Nvim starts:
 ]D jumps to the last diagnostic in the buffer. ]D-default
 [D jumps to the first diagnostic in the buffer. [D-default
 <C-w>d shows diagnostic at cursor in a floating window. CTRL-W_d-default
+
+
+## TODO
+- [x] buffer line
+- [x] change color of git status in nvim tree
+- [x] lsp
+- [x] code foolding
+- [ ] pyright, ruff, black, isort
+- [ ] tsserver
+- [ ] formatter
+- [ ] lua line 
+- [ ] session manger
+- [ ] saghen/blink.cmp
+- [ ] https://github.com/lewis6991/gitsigns.nvim
+- [ ] colorify nvchad
+- [ ] copilot

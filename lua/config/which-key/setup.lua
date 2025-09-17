@@ -56,13 +56,8 @@ wk.add({
   { "<leader>P", group = " Parser"},
 	{ "<leader>s", group = "Code" },
 	{ "<leader>b", group = " Buffer" .. SyHoMadaraVim.icons.buffer },
-	-- {
-	-- 	"<leader>?",
-	-- 	function()
-	-- 		require("which-key").show({ global = false })
-	-- 	end,
-	-- 	desc = "Buffer Local Keymaps",
-	-- },
+  { "<leader>cc", group = " Pick Color"},
+	
 })
 
 wk.add({
