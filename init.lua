@@ -1,5 +1,5 @@
 IS_MINIMAL = false
-IS_CODGIN_MODE = true
+IS_CODING_MODE = true
 
 require("config.SyHoMadaraVim")
 require("utils.globals")
