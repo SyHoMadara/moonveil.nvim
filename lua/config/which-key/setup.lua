@@ -73,14 +73,7 @@ wk.add({
 	{ "<leader>/", "gcc", desc = "Toggle Commant", mode = { "n", "v" } },
 })
 
+
 wk.add({
-	{
-		"<leader>]",
-		function()
-			for key, value in pairs(require("which-key")) do
-				require("snacks").notifier.notify(key .. " = " .. tostring(value), "info", { title = "Which-Key" })
-			end
-		end,
-		desc = "Notifie An command",
-	},
+  { "z", group = " Folding " .. SyHoMadaraVim.icons.fold}
 })
