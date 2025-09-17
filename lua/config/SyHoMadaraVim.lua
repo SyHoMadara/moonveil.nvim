@@ -17,6 +17,20 @@ SyHoMadaraVim = {
 	},
 	shownumber = true, -- show line number
 	relativenumber = false, -- show relative line number
+	plugins = {
+		-- Make sure to reload nvim & "Update Plugins" after change
+		ai = {
+			codecompanion = {
+				enabled = true,
+			},
+			copilot = {
+				enabled = true,
+			},
+      avante = {
+        enabled = false,
+      }
+		},
+	},
 }
 
 vim.wo.number = SyHoMadaraVim.shownumber or true

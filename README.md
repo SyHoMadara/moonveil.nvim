@@ -56,3 +56,5 @@ These diagnostic keymaps are created unconditionally when Nvim starts:
 - [ ] https://github.com/lewis6991/gitsigns.nvim
 - [ ] colorify nvchad
 - [ ] copilot
+- [ ] Ocianic-next schema
+- [ ] other ai plugins from front nvim

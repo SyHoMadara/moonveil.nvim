@@ -56,7 +56,9 @@ wk.add({
   { "<leader>P", group = " Parser"},
 	{ "<leader>s", group = "Code" },
 	{ "<leader>b", group = " Buffer" .. SyHoMadaraVim.icons.buffer },
-  { "<leader>cc", group = " Pick Color"},
+  { "<leader>cc", group = " CopilotChat"},
+  { "<leader>ct", group = " Pick Color"},
+
 	
 })
 

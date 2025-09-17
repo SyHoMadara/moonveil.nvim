@@ -7,7 +7,7 @@ return {
       require("minty").setup({
         vim.keymap.set(
           {"n", "v"},
-          "<leader>ccs",
+          "<leader>cts",
           function()
             require("minty.shades").open()
           end,
@@ -15,7 +15,7 @@ return {
         ),
         vim.keymap.set(
           {"n", "v"},
-          "<leader>cct",
+          "<leader>ctt",
           function()
             require("minty.huefy").open()
           end,
