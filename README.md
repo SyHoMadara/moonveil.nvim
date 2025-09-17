@@ -32,3 +32,11 @@ Close: q
 ["]e"] = "explorer_error_next",
 ["[e"] = "explorer_error_prev",
 ```
+
+## Diagnostic 
+These diagnostic keymaps are created unconditionally when Nvim starts:
+]d jumps to the next diagnostic in the buffer. ]d-default
+[d jumps to the previous diagnostic in the buffer. [d-default
+]D jumps to the last diagnostic in the buffer. ]D-default
+[D jumps to the first diagnostic in the buffer. [D-default
+<C-w>d shows diagnostic at cursor in a floating window. CTRL-W_d-default
