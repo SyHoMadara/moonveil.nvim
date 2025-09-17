@@ -1,6 +1,5 @@
 local mason = require("mason")
 local mason_lsp = require("mason-lspconfig")
-local ufo_utils = require("utils._ufo")
 local lspconfig = require("lspconfig")
 
 mason_lsp.setup({
@@ -8,7 +7,7 @@ mason_lsp.setup({
 	ensure_installed = {
 		-- "bashls",
 		-- "cssls",
--- "eslint",
+		-- "eslint",
 		-- "graphql",
 		-- "html",
 		-- "jsonls",
@@ -84,7 +83,4 @@ end
 --
 -- }
 
--- require("ufo").setup({
---   fold_virt_text_handler = ufo_config_handler,
---   close_fold_kinds_for_ft = { default = { "imports" } },
--- })
+

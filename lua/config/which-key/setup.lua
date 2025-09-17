@@ -7,6 +7,7 @@ wk.setup({
 	triggers = {
 		{ "<leader>", mode = { "n", "v" } },
 		{ "f", mode = { "n", "i" } },
+    { "z", mode = { "n", "i" } },
 	},
 	plugins = {
 		marks = true, -- shows a list of your marks on ' and `
@@ -52,6 +53,7 @@ wk.add({
 
 	{ "<leader>f", group = " Grep" .. SyHoMadaraVim.icons.search },
 	{ "<leader>p", group = " Project" .. SyHoMadaraVim.icons.folder },
+  { "<leader>P", group = " Parser"},
 	{ "<leader>s", group = "Code" },
 	{ "<leader>b", group = " Buffer" .. SyHoMadaraVim.icons.buffer },
 	-- {
@@ -64,7 +66,7 @@ wk.add({
 })
 
 wk.add({
-	{ "<A-q>", "<cmd>bn|bd#<CR>", desc = " Close Buffer " .. SyHoMadaraVim.icons.close, mode = { "n", "i" } },
+	{ "<A-q>", "<cmd>bn|bd#<CR>", desc = "Close Buffer" .. SyHoMadaraVim.icons.close, mode = { "n", "i" } },
 	{ "<C-s>", "<cmd>w<cr>", desc = "Save Buffer", mode = { "n", "i" } },
 	{ "<C-e>", "<cmd>q!<cr>", desc = "Quit Neovim", mode = { "n", "i" } },
 })
@@ -73,7 +75,6 @@ wk.add({
 	{ "<leader>/", "gcc", desc = "Toggle Commant", mode = { "n", "v" } },
 })
 
-
 wk.add({
-  { "z", group = " Folding " .. SyHoMadaraVim.icons.fold}
+	{ "z", group = "Folding", mode = { "n" } },
 })

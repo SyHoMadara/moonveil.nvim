@@ -9,7 +9,6 @@ return {
 		config = function()
 			require("config.lsp.setup")
 			require("config.lsp.config")
-			require("config.lsp.functions")
 		end,
 	},
 
