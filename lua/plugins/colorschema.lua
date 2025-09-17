@@ -10,4 +10,9 @@ return {
 			require("config.colorscheme")
 		end,
 	},
+  -- {
+  --   'mhartington/oceanic-next',
+  --   lazy = false,
+  --   priority = 1000,
+  -- }
 }
