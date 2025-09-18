@@ -58,3 +58,4 @@ These diagnostic keymaps are created unconditionally when Nvim starts:
 - [ ] copilot
 - [ ] Ocianic-next schema
 - [ ] other ai plugins from front nvim
+- [ ] todo comment finder and colorize
