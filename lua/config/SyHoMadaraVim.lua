@@ -1,5 +1,6 @@
 local icons = require("utils.icons")
 
+
 SyHoMadaraVim = {
 	-- General
 	colorscheme = "tokyonight", -- colorscheme name
@@ -35,5 +36,9 @@ SyHoMadaraVim = {
 
 vim.wo.number = SyHoMadaraVim.shownumber or true
 vim.wo.relativenumber = SyHoMadaraVim.relativenumber or false
+vim.opt.showmode = false
+vim.opt.clipboard = 'unnamedplus'
+
+
 
 return SyHoMadaraVim

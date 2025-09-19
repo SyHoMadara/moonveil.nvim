@@ -69,7 +69,9 @@ wk.add({
 })
 
 wk.add({
-	{ "<leader>/", "gcc", desc = "Toggle Commant", mode = { "n", "v" } },
+	{ "<leader>/", "gcc", desc = "Toggle Commant", mode = { "n" } },
+	{ "<leader>/", "gc", desc = "Toggle Commant", mode = { "v" } },
+	{ "C-c", "<cmd>%y+<cr>", desc = "Copy to Clipboard", mode = { "n" }},
 })
 
 wk.add({
