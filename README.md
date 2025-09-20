@@ -41,6 +41,14 @@ These diagnostic keymaps are created unconditionally when Nvim starts:
 [D jumps to the first diagnostic in the buffer. [D-default
 <C-w>d shows diagnostic at cursor in a floating window. CTRL-W_d-default
 
+## Auto pair
+Before        Input                    After         Note
+-----------------------------------------------------------------
+(|foobar      <C-e> then press $       (|foobar)
+(|)(foobar)   <C-e> then press q       (|(foobar))
+(|foo bar     <C-e> then press qh      (|foo) bar
+(|foo bar     <C-e> then press qH      (foo|) bar
+(|foo bar     <C-e> then press qH      (foo)| bar    if cursor_pos_before = false
 
 ## TODO
 - [x] buffer line

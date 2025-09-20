@@ -5,11 +5,11 @@ return {
 		config = function()
 			require("nvim-treesitter.configs").setup({
 				ensure_installed = {
-					-- "tsx",
-					-- "typescript",
-					-- "javascript",
-					-- "html",
-					-- "css",
+					"tsx",
+					"typescript",
+					"javascript",
+					"html",
+					"css",
 					-- "vue",
 					-- "astro",
 					-- "svelte",
@@ -19,7 +19,7 @@ return {
 					"json5",
 					"lua",
 					"markdown",
-					-- "prisma",
+					"prisma",
 					"python",
 					"vim",
 				}, -- one of "all", or a list of languages

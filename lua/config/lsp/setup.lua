@@ -9,11 +9,12 @@ mason_lsp.setup({
 		-- "cssls",
 		-- "eslint",
 		-- "graphql",
-		-- "html",
+		"html",
 		-- "jsonls",
 		"lua_ls",
 		"pyright",
 		"ruff",
+    "ts_ls",
 
 		-- "prismals",
 		-- "tailwindcss",
@@ -35,13 +36,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 local function on_attach(client, bufnr)
 	vim.lsp.inlay_hint.enable(true, { bufnr })
 end
--- Config lsp
--- vim.lsp.config("lua_ls").setup({
--- 	capabilities = capabilities,
--- 	handlers = handlers,
--- 	on_attach = on_attach,
--- 	settings = require("config.lsp.servers.lua_ls").settings,
--- })
+
 -- Global override for floating preview border
 local orig_util_open_floating_preview = vim.lsp.util.open_floating_preview
 function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
@@ -49,8 +44,7 @@ function vim.lsp.util.open_floating_preview(contents, syntax, opts, ...)
 	opts.border = opts.border or SyHoMadaraVim.ui.float.border or "rounded"
 	return orig_util_open_floating_preview(contents, syntax, opts, ...)
 end
---
---
+
 -- -- Config lsp
 local lua_ls = require("config.lsp.servers.lua_ls")
 vim.lsp.config("lua_ls", {
