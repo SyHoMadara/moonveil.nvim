@@ -52,35 +52,27 @@ end
 --
 --
 -- -- Config lsp
--- vim.lsp.config("lua_ls").setup({
--- 	capabilities = capabilities,
--- 	handlers = handlers,
--- 	on_attach = on_attach,
--- 	settings = require("config.lsp.servers.lua_ls").settings,
--- })
---
+local lua_ls = require("config.lsp.servers.lua_ls")
+vim.lsp.config("lua_ls",{
+	capabilities = capabilities,
+	handlers = handlers,
+	on_attach = on_attach,
+	settings = lua_ls.settings,
+})
 
--- require("mason-lspconfig").setup_handlers {
---   -- The first entry (without a key) will be the default handler
---   -- and will be called for each installed server that doesn't have
---   -- a dedicated handler.
---   function(server_name)
---     require("lspconfig")[server_name].setup {
---       on_attach = on_attach,
---       capabilities = capabilities,
---       handlers = handlers,
---     }
---   end,
---
---    ["lua_ls"] = function()
---     lspconfig.lua_ls.setup({
---       capabilities = capabilities,
---       handlers = handlers,
---       on_attach = on_attach,
---       settings = require("config.lsp.servers.lua_ls").settings,
---     })
---   end,
---
--- }
+local pyright = require("config.lsp.servers.pyright")
+vim.lsp.config("pyright", {
+	capabilities = pyright.capabilities,
+	handlers = handlers,
+	on_attach = pyright.on_attach,
+	settings = pyright.settings,
+})
 
+local ruff = require("config.lsp.servers.ruff")
+vim.lsp.config("ruff", {
+  capabilities = capabilities,
+  handlers = handlers,
+  on_attach = ruff.on_attach,
+  settings = ruff.settings,
+})
 
