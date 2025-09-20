@@ -53,7 +53,7 @@ end
 --
 -- -- Config lsp
 local lua_ls = require("config.lsp.servers.lua_ls")
-vim.lsp.config("lua_ls",{
+vim.lsp.config("lua_ls", {
 	capabilities = capabilities,
 	handlers = handlers,
 	on_attach = on_attach,
@@ -70,9 +70,18 @@ vim.lsp.config("pyright", {
 
 local ruff = require("config.lsp.servers.ruff")
 vim.lsp.config("ruff", {
-  capabilities = capabilities,
-  handlers = handlers,
-  on_attach = ruff.on_attach,
-  settings = ruff.settings,
+	capabilities = capabilities,
+	handlers = handlers,
+	on_attach = ruff.on_attach,
+	settings = ruff.settings,
 })
+
+local ts_ls = require("config.lsp.servers.lua_ls")
+vim.lsp.config("typescript-tools", {
+	capabilities = capabilities or vim.lsp.protocol.make_client_capabilities(),
+	handlers = ts_ls.handlers,
+	on_attach = ts_ls.on_attach,
+	settings = ts_ls.settings,
+})
+
 
