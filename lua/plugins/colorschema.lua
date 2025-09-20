@@ -12,8 +12,9 @@ return {
 	},
 	{
     "Mofiqul/vscode.nvim",
-    lazy = false,
-    priority = 1000,
+    -- lazy = false,
+    -- priority = 1000,
+    enabled=false,
     config = function()
       require("vscode").setup({
         style = "dark",

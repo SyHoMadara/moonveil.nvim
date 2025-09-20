@@ -5,6 +5,7 @@ SyHoMadaraVim = {
 	-- General
 	colorscheme = "tokyonight", -- colorscheme name
 	ui = {
+    font = { "JetBrainsMono Nerd Font", ":h14" },
 		float = {
 			border = "rounded", -- defutlt=rounded, none, single, double, solid, shadow
 		},
@@ -33,12 +34,5 @@ SyHoMadaraVim = {
 		},
 	},
 }
-
-vim.wo.number = SyHoMadaraVim.shownumber or true
-vim.wo.relativenumber = SyHoMadaraVim.relativenumber or false
-vim.opt.showmode = false
-vim.opt.clipboard = 'unnamedplus'
-
-
 
 return SyHoMadaraVim

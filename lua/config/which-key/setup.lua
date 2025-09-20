@@ -64,14 +64,17 @@ wk.add({
 
 wk.add({
 	{ "<A-q>", "<cmd>bn|bd#<CR>", desc = "Close Buffer" .. SyHoMadaraVim.icons.close, mode = { "n", "i" } },
-	{ "<C-s>", "<cmd>w<cr>", desc = "Save Buffer", mode = { "n", "i" } },
-	{ "<C-e>", "<cmd>q!<cr>", desc = "Quit Neovim", mode = { "n", "i" } },
+	-- { "<C-s>", "<cmd>w<cr>", desc = "Save Buffer", mode = { "n", "i" } },
+	-- { "<C-e>", "<cmd>q!<cr>", desc = "Quit Neovim", mode = { "n", "i" } },
 })
 
 wk.add({
 	{ "<leader>/", "gcc", desc = "Toggle Commant", mode = { "n" } },
 	{ "<leader>/", "gc", desc = "Toggle Commant", mode = { "v" } },
-	{ "C-c", "<cmd>%y+<cr>", desc = "Copy to Clipboard", mode = { "n" }},
+	{ "<C-c>", "<cmd>%y+<cr>", desc = "Copy to Clipboard", mode = { "n" }},
+  { "x", "\"_x", desc = "Remove", mode = {"n", "v"}},
+  { "<S-D>", "\"_d", desc = "Remove", mode = {"n", "v"}},
+  { "<S-X>", "\"_x", desc = "Remove", mode = {"n", "v"}},
 })
 
 wk.add({
