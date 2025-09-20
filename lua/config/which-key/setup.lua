@@ -4,11 +4,11 @@ if not present then
 end
 
 wk.setup({
-	triggers = {
-		{ "<leader>", mode = { "n", "v" } },
-		{ "f", mode = { "n", "i" } },
-    { "z", mode = { "n", "i" } },
-	},
+--	triggers = {
+--		{ "<leader>", mode = { "n", "v" } },
+--		{ "f", mode = { "n", "i" } },
+--    { "z", mode = { "n", "i" } },
+--	},
 	plugins = {
 		marks = true, -- shows a list of your marks on ' and `
 		registers = true, -- shows your registers on " in NORMAL or <C-r> in INSERT mode
@@ -69,8 +69,8 @@ wk.add({
 })
 
 wk.add({
-	{ "<leader>/", "gcc", desc = "Toggle Commant", mode = { "n" } },
-	{ "<leader>/", "gc", desc = "Toggle Commant", mode = { "v" } },
+--	{ "<leader>/", "gcc", desc = "Toggle Commant", mode = { "n" } },
+--	{ "<leader>/", "gc", desc = "Toggle Commant", mode = { "v" } },
 	{ "<C-c>", "<cmd>%y+<cr>", desc = "Copy to Clipboard", mode = { "n" }},
   { "x", "\"_x", desc = "Remove", mode = {"n", "v"}},
   { "<S-D>", "\"_d", desc = "Remove", mode = {"n", "v"}},
