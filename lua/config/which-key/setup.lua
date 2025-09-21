@@ -55,8 +55,10 @@ wk.add({
 	{ "<leader>p", group = " Project" .. SyHoMadaraVim.icons.folder },
 	{ "<leader>ps", group = " Session Manager" .. SyHoMadaraVim.icons.folder },
   { "<leader>P", group = " Parser"},
-	{ "<leader>s", group = "Code" },
+	{ "<leader>s", group = "Use Full Things" },
 	{ "<leader>b", group = " Buffer" .. SyHoMadaraVim.icons.buffer },
+	{ "<leader>c", group = " Code" .. SyHoMadaraVim.icons.buffer },
+
   { "<leader>cc", group = " CopilotChat"},
   { "<leader>ct", group = " Pick Color"},
 
