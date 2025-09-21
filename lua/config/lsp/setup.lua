@@ -6,18 +6,18 @@ mason_lsp.setup({
 
 	ensure_installed = {
 		-- "bashls",
-		-- "cssls",
+		"cssls",
 		-- "eslint",
 		-- "graphql",
 		"html",
-		-- "jsonls",
+		"jsonls",
 		"lua_ls",
 		"pyright",
 		"ruff",
-    "ts_ls",
+		"ts_ls",
 
 		-- "prismals",
-		-- "tailwindcss",
+		"tailwindcss",
 	},
 })
 
@@ -78,4 +78,31 @@ vim.lsp.config("typescript-tools", {
 	settings = ts_ls.settings,
 })
 
+local cssls = require("config.lsp.servers.cssls")
+vim.lsp.config("cssls", {
+	capabilities = capabilities,
+	handlers = handlers,
+	on_attach = cssls.on_attach,
+	settings = cssls.settings,
+})
 
+local tailwindcss = require("config.lsp.servers.tailwindcss")
+vim.lsp.config("tailwindcss", {
+	capabilities = capabilities,
+	filetypes = tailwindcss.filetypes,
+	handlers = handlers,
+	init_options = tailwindcss.init_options,
+	on_attach = tailwindcss.on_attach,
+	settings = tailwindcss.settings,
+	flags = {
+		debounce_text_changes = 1000,
+	},
+})
+
+local jsonls = require("config.lsp.servers.jsonls")
+vim.lsp.config("jsonls", {
+	capabilities = capabilities,
+	handlers = handlers,
+	on_attach = on_attach,
+	settings = jsonls.settings,
+})
