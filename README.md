@@ -55,15 +55,15 @@ Before        Input                    After         Note
 - [x] change color of git status in nvim tree
 - [x] lsp
 - [x] code foolding
-- [ ] pyright, ruff, black, isort
-- [ ] tsserver
-- [ ] formatter
+- [x] pyright, ruff, black, isort
+- [x] tsserver
+- [x] formatter
 - [ ] lua line 
 - [ ] session manger
-- [ ] saghen/blink.cmp
+- [x] saghen/blink.cmp
 - [ ] https://github.com/lewis6991/gitsigns.nvim
 - [ ] colorify nvchad
-- [ ] copilot
+- [x] copilot
 - [ ] Ocianic-next schema
 - [ ] other ai plugins from front nvim
 - [ ] todo comment finder and colorize
