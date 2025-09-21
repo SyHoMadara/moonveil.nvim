@@ -20,9 +20,9 @@ return {
 
 				open_fold_hl_timeout = 150,
 				close_fold_kinds_for_ft = {
-          defult = {},
-          python = { "import_statement", "function_definition", "import_from_statement", "argument_list" },
-        },
+					defult = {},
+					python = { "import_statement", "function_definition", "import_from_statement", "argument_list" },
+				},
 				preview = {
 					win_config = {
 						border = { "", "─", "", "", "", "─", "", "" },
@@ -46,6 +46,10 @@ return {
 					vim.lsp.buf.hover()
 				end
 			end, { desc = "UFO: Peek folded lines" })
+			vim.keymap.set("n", "zc", function()
+				local row = vim.fn.line(".")
+				require("ufo").closeFoldsWith(1, { row, row })
+			end)
 		end,
 	},
 }
