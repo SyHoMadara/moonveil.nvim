@@ -49,7 +49,7 @@ return {
 			vim.keymap.set("n", "zc", function()
 				local row = vim.fn.line(".")
 				require("ufo").closeFoldsWith(1, { row, row })
-			end)
+			end, { desc = "UFO: Close current fold" })
 		end,
 	},
 }
