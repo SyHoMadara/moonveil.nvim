@@ -9,6 +9,7 @@ return {
 			bigfile = { enabled = true },
 			bufdelete = { enabled = true },
 			dashboard = { enabled = false },
+      treminal = { enabled = true },
 			explorer = { enabled = true },
 			indent = { enabled = true },
 			input = { enabled = SyHoMadaraVim.minimal_mode == false },
@@ -65,6 +66,17 @@ return {
 			words = { enabled = false },
 		},
 		keys = {
+      -- ╭─────────────────────────────────────────────────────────╮
+			-- │ Terminal                                                 │
+			-- ╰─────────────────────────────────────────────────────────╯
+      {
+        "<M-h>",
+        function()
+          Snacks.terminal.toggle()
+        end,
+        desc = "Toggle Terminal",
+      },
+      --  ╭─────────────────────────────────────────────────────────╮
 			-- ╭─────────────────────────────────────────────────────────╮
 			-- │ Lazygit                                                 │
 			-- ╰─────────────────────────────────────────────────────────╯
