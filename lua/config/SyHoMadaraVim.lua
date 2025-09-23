@@ -26,7 +26,7 @@ SyHoMadaraVim = {
 				enabled = true,
 			},
 			copilot = {
-				enabled = true,
+				enabled = false,
 			},
       avante = {
         enabled = false,

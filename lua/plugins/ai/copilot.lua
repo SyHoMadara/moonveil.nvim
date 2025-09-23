@@ -3,6 +3,7 @@ return {
     "zbirenbaum/copilot.lua",
     cmd = "Copilot",
     event = "InsertEnter",
+    enabled = SyHoMadaraVim.plugins.ai.copilot.enabled,
     config = function()
       require("copilot").setup {
         panel = {
