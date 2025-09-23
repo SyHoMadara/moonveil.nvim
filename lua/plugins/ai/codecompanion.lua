@@ -17,7 +17,7 @@ return {
 			},
 			display = {
 				chat = {
-					show_settings = true,
+					show_settings = false,
 				},
 			},
 			strategies = {
@@ -112,7 +112,7 @@ return {
 						return require("codecompanion.adapters").extend("copilot", {
 							schema = {
 								model = {
-									default = "claude-4-sonnet",
+									default = "claude-3.5-sonnet",
 								},
 							},
 						})

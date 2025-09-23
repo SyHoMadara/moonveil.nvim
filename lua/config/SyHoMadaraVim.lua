@@ -27,6 +27,7 @@ SyHoMadaraVim = {
 			},
 			copilot = {
 				enabled = false,
+        auto_suggest = true,
 			},
       avante = {
         enabled = false,

@@ -22,7 +22,7 @@ return {
           },
         },
         suggestion = {
-          enabled = true,
+          enabled = SyHoMadaraVim.plugins.ai.copilot.auto_suggest,
           auto_trigger = true,
           hide_during_completion = true,
           debounce = 75,
