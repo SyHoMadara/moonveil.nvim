@@ -1,4 +1,5 @@
 return {
+  { "nvzone/volt", lazy = true },
   {
     "nvzone/minty",
     lazy = false,
