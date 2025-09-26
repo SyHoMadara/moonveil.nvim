@@ -10,7 +10,7 @@ return {
 			bufdelete = { enabled = true },
 			dashboard = { enabled = false },
       treminal = { enabled = true },
-			explorer = { enabled = true },
+			explorer = { enabled = false },
 			indent = { enabled = true },
 			input = { enabled = SyHoMadaraVim.minimal_mode == false },
 			notifier = {
@@ -121,14 +121,14 @@ return {
 			-- ╭─────────────────────────────────────────────────────────╮
 			-- │ Picker                                                  │
 			-- ╰─────────────────────────────────────────────────────────╯
-			{
-				"<C-n>",
-
-				function()
-					Snacks.picker.explorer()
-				end,
-				desc = "explorer",
-			},
+			-- {
+			-- 	"<C-n>",
+			--
+			-- 	function()
+			-- 		Snacks.picker.explorer()
+			-- 	end,
+			-- 	desc = "explorer",
+			-- },
 			{
 				"<leader>ff",
 				function()

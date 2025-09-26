@@ -109,3 +109,7 @@ keymap("n", "<M-->", function() require('utils').adjust_font_size(-1) end, silen
 -- comment
 keymap("n", "<leader>/", "gcc", { silent = true, desc = "Toggle Comment", remap = true})
 keymap("v", "<leader>/", "gc", { silent = true, desc = "Toggle Comment", remap = true})
+
+-- nvimtree
+keymap("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
+keymap("n", "<leader>e", "<cmd>NvimTreeFocus<CR>", { desc = "nvimtree focus window" })
