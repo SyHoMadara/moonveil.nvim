@@ -1,3 +1,7 @@
+None minima nvim config :))
+<img width="1451" height="703" alt="image" src="https://github.com/user-attachments/assets/71dc3a2e-73cc-402b-b984-c158c9deeac3" />
+
+
 ## Explorer
 Open = Ctrl + n
 Close: q
