@@ -1,5 +1,6 @@
 None minima nvim config :))
-<img width="1451" height="703" alt="image" src="https://github.com/user-attachments/assets/71dc3a2e-73cc-402b-b984-c158c9deeac3" />
+<img width="1367" height="697" alt="image" src="https://github.com/user-attachments/assets/531ad8c6-d388-414a-953f-96faa148da50" />
+
 
 
 ## Explorer
